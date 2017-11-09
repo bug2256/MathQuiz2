@@ -6,7 +6,7 @@ from random import randint
 def say(something):
     system('say "%s"' % something)
 
-#how big a number should we guess? 
+#how big a number should we guess?
 max_number = 10
 first_line = "Guess a number between 1 and %d" % max_number
 print(first_line)
@@ -18,11 +18,14 @@ not_solved = True
 while not_solved:
     answer = input('?')
     you_said = "You typed %d" % answer
-    say(you_said)
+    #say(you_said)
     if answer > number:
-        say("The number is lower")
+        print(you_said)
+#        say("The number is lower")
     elif answer < number:
-        say("The number is higher")
+        print(you_said)
+#        say("The number is higher")
     else:
-        say("You got it right")
+        print(you_said)
+#        say("You got it right")
         not_solved = False
