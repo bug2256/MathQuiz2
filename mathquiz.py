@@ -20,12 +20,12 @@ while not_solved:
     you_said = "You typed %d" % answer
     #say(you_said)
     if answer > number:
-        print(you_said)
+        print("the number is lower")
 #        say("The number is lower")
     elif answer < number:
-        print(you_said)
+        print("the number is higher")
 #        say("The number is higher")
     else:
-        print(you_said)
+        print("you got it right")
 #        say("You got it right")
         not_solved = False
